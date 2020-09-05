@@ -1,0 +1,154 @@
+/**************************
+*************************** 
+TABLE OF CONTENTS
+
+1.0  Containers
+2.0  Rows
+3.0  Columns
+4.0  Mobile 
+
+****************************
+***************************/
+
+/***********************************/
+/******   1.0  Containers    *******/
+/***********************************/
+
+/* save this for movbile version */
+
+/* section {
+    scroll-snap-type: y mandatory;
+  max-height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+section::-webkit-scrollbar {
+  display: none;
+}  */
+
+/***********************************/
+/*********   2.0  Rows    **********/
+/***********************************/
+
+.row {
+  position: relative;
+  width: 100%;
+}
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 1%;
+  min-height: 0.125rem;
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/***********************************/
+/***   3.0  Desktop columns    *****/
+/***********************************/
+
+.col {
+  background-color: white;
+  padding: 10px;
+}
+
+.c1 {
+  width: 6.33%;
+}
+.c2 {
+  width: 14.66%;
+}
+.c3 {
+  width: 23%;
+}
+.c4 {
+  width: 31.33%;
+}
+.c5 {
+  width: 39.66%;
+}
+.c6 {
+  width: 48%;
+}
+.c7 {
+  width: 56.33%;
+}
+.c8 {
+  width: 64.66%;
+}
+.c9 {
+  width: 73%;
+}
+.c10 {
+  width: 81.33%;
+}
+.c11 {
+  width: 89.66%;
+}
+.c12 {
+  width: 98%;
+}
+
+/***********************************/
+/****   4.0  Mobile columns    *****/
+/***********************************/
+
+@media only screen and (max-width: 900px) {
+
+  .s1 {
+    width: 6.33%;
+  }
+  .s2 {
+    width: 14.66%;
+  }
+  .s3 {
+    width: 23%;
+  }
+  .s4 {
+    width: 31.33%;
+  }
+  .s5 {
+    width: 39.66%;
+  }
+  .s6 {
+    width: 48%;
+  }
+  .s7 {
+    width: 56.33%;
+  }
+  .s8 {
+    width: 64.66%;
+  }
+  .s9 {
+    width: 73%;
+  }
+  .s10 {
+    width: 81.33%;
+  }
+  .s11 {
+    width: 89.66%;
+  }
+  .s12 {
+    width: 98%;
+  }
+
+  .container-s,
+  .container-m,
+  .container-l,
+  .container-xl {
+    width: 98%;
+    padding-top: 18%;
+    padding-bottom: 18%;
+  }
+}

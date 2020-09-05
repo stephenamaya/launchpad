@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Welcome </title>
+    <meta name="description" content="awesome description of website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./main.css?ver=2">
+    <link rel="stylesheet" href="./grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<script>
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 14000);
+});
+    </script>
+
+<body>
+
+    <!--[if IE]> <h1> You are using an <strong>outdated</strong> browser. Please update your browser to improve your experience.</h1> <![endif]-->
+
+    <!-- navigation  -->
+
+    <nav>
+
+    </nav>
+
+
+
+    <section>
+
+        <div class="one" id="section1">
+            <li> Section 1 </li>
+        </div>
+
+        <div class="two">
+            <li> Section 2 </li>
+        </div>
+
+        <div class="one">
+            <li> Section 3 </li>
+        </div>
+
+        <div class="two">
+            <li> Section 4 </li>
+        </div>
+
+        <div class="one">
+            <li> Section 5 </li>
+        </div>
+
+
+        <div class="two launch">
+            <h1> Big news, we have a launch today. Yes, even on a _____ . </h1>
+            <h2> We will be starting our tour with a crowd favorite, Earth. </h2>
+            <h2> Launch when ready captain. </h2>
+
+            <div class="stretched-btn">
+                <a href="#section1"> Launch </a>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+</body>
+
+</html>
