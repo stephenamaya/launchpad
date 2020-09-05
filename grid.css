@@ -16,7 +16,7 @@ TABLE OF CONTENTS
 
 /* save this for movbile version */
 
-/* section {
+/* #section1 {
     scroll-snap-type: y mandatory;
   max-height: 100vh;
   overflow-y: scroll;
@@ -26,13 +26,14 @@ TABLE OF CONTENTS
   scroll-snap-type: y mandatory;
 }
 
-section {
+#section1 {
   -ms-overflow-style: none;  
   scrollbar-width: none;  
 }
-section::-webkit-scrollbar {
+#section1::-webkit-scrollbar {
   display: none;
 }  */
+
 
 /***********************************/
 /*********   2.0  Rows    **********/
@@ -57,11 +58,6 @@ section::-webkit-scrollbar {
 /***********************************/
 /***   3.0  Desktop columns    *****/
 /***********************************/
-
-.col {
-  background-color: white;
-  padding: 10px;
-}
 
 .c1 {
   width: 6.33%;

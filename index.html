@@ -10,70 +10,164 @@
     <link rel="stylesheet" href="./main.css?ver=2">
     <link rel="stylesheet" href="./grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
 </head>
 
-<script>
-
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 14000);
-});
-    </script>
 
 <body>
 
-    <!--[if IE]> <h1> You are using an <strong>outdated</strong> browser. Please update your browser to improve your experience.</h1> <![endif]-->
-
-    <!-- navigation  -->
-
     <nav>
-
+        <a href="#neptune" id="neptune-btn"> Neptune </a>
+        <a href="#uranus" id="uranus-btn"> Uranus </a>
+        <a href="#saturn" id="saturn-btn"> Saturn </a>
+        <a href="#jupiter" id="jupiter-btn"> Jupiter </a>        
+        <a href="#mars" id="mars-btn"> Mars </a>
+        <a href="#earth" id = "earth-btn"> Earth </a>
+        <a href="#venus" id="venus-btn"> Venus </a>
+        <a href="#mercury" id="mercury-btn" > Mercury </a>
+        <a href="#sun" id="sun-btn" > The Sun </a>
+        <a href="#launch" id="launch-btn"> Launch Pad </a>
     </nav>
 
 
 
-    <section>
-
-        <div class="one" id="section1">
-            <li> Section 1 </li>
-        </div>
-
-        <div class="two">
-            <li> Section 2 </li>
-        </div>
-
-        <div class="one">
-            <li> Section 3 </li>
-        </div>
-
-        <div class="two">
-            <li> Section 4 </li>
-        </div>
-
-        <div class="one">
-            <li> Section 5 </li>
-        </div>
-
-
-        <div class="two launch">
-            <h1> Big news, we have a launch today. Yes, even on a _____ . </h1>
-            <h2> We will be starting our tour with a crowd favorite, Earth. </h2>
-            <h2> Launch when ready captain. </h2>
-
-            <div class="stretched-btn">
-                <a href="#section1"> Launch </a>
+    <div class="one">
+        <div class="row" id="neptune">
+            <div class="col c8">
+                <h1>Neptune description</h1>
             </div>
 
+            <div class="col c4">
+                <img src="./images/planets/neptune.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="two" id="uranus">
+        <div class="row">
+            <div class="col c8">
+                <h1>Uranus description</h1>
+            </div>
+
+            <div class="col c4">
+                <img src="./images/planets/uranus.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="one" id="saturn">
+        <div class="row">
+            <div class="col c8">
+                <h1>Saturn description</h1>
+            </div>
+
+            <div class="col c4">
+                <img src="./images/planets/saturn.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="two" id="jupiter">
+        <div class="row">
+            <div class="col c8">
+                <h1>Jupiter description</h1>
+            </div>
+
+            <div class="col c4">
+                <img src= "./images/planets/jupiter.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="one" id = "mars">
+        <div class="row">
+            <div class="col c8">
+                <h1>Mars description</h1>
+            </div>
+
+            <div class="col c4">
+                <img src="./images/planets/mars.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="two" id="earth">
+        <div class="row">
+            <a id="earth"></a>
+            <div class="col c8">
+                <h1>Earth description</h1>
+            </div>
+
+            <div class="col c4">
+                <img src="./images/planets/earth.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="one" id="venus">
+        <div class="row">
+            <div class="col c8">
+                <h1>Venus description</h1>
+            </div>
+
+            <div class="col c4">
+                <img src="./images/planets/venus.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="two" id="mercury">
+        <div class="row">
+            <div class="col c8">
+                <h1>Mercury description</h1>
+            </div>
+
+            <div class="col c4">
+                <img src="./images/planets/mercury.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="one" id="sun">
+        <div class="row">
+            <div class="col c8">
+                <h1>The Sun description</h1>
+            </div>
+
+            <div class="col c4">
+                <img src="./images/planets/sun.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class = "two"></div>
+    <div class = "one"></div>
+    <div class = "two"></div>
+    <div class = "one"></div>
+    <div class = "two"></div>
+    <div class = "one"></div>
+    <div class = "two"></div>
+    <div class = "one"></div>
+
+
+
+    <div class="launch">
+        <h1> Big news, we have a launch today. Yes, even on a _____ . </h1>
+        <h2> We will be starting our tour with a crowd favorite, Earth. </h2>
+        <h2> Launch when ready captain. </h2>
+
+        <div class="stretched-btn">
+            <a href="#earth" id="launch"> Launch </a>
         </div>
 
+<br>
+    </div>
 
 
 
-    </section>
+
 
 </body>
 
