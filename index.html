@@ -15,9 +15,9 @@
 </head>
 
 
-<body>
+<body onload="dayofweek(); worldpopulation();">
 
-    <nav>
+    <nav >
         <a href="#neptune" id="neptune-btn"> Neptune </a>
         <a href="#uranus" id="uranus-btn"> Uranus </a>
         <a href="#saturn" id="saturn-btn"> Saturn </a>
@@ -95,8 +95,14 @@
     <div class="two" id="earth">
         <div class="row">
             <a id="earth"></a>
-            <div class="col c8">
-                <h1>Earth description</h1>
+            <div class="col c8 description">
+                <h1> Oh hey there bud, just me, the Earth. </h1>
+                <h2> A little about me: </h2>
+                <h2> - Full of life </h2>
+                <h2> - Hydrated </h2>
+                <h2> - Vintage </h2>
+                <h2> - Attractive </h2>
+                <h2> - Roughly <span id="worldpop"></span> residents</h2> 
             </div>
 
             <div class="col c4">
@@ -152,9 +158,8 @@
     <div class = "one"></div>
 
 
-
     <div class="launch">
-        <h1> Big news, we have a launch today. Yes, even on a _____ . </h1>
+        <h1> Big news, we have a launch today. Yes, even on a <span id = "dayoweek">  </span>. </h1>
         <h2> We will be starting our tour with a crowd favorite, Earth. </h2>
         <h2> Launch when ready captain. </h2>
 

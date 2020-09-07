@@ -73,7 +73,7 @@ body::-webkit-scrollbar {
 .two {
   font-size: 1.4rem;
   height: 100vh;
-  line-height: 3;
+  line-height: 2;
   padding-left: 250px;
 }
 
@@ -103,8 +103,7 @@ body::-webkit-scrollbar {
 /***   3.0 Navigation header   *****/
 /***********************************/
 
-nav{
-  position: fixed;
+nav{   position: fixed;
   z-index: 1;
   top: 20px;
   left: 20px;
@@ -127,7 +126,16 @@ nav a {
 nav a:hover{
   color: rgb(228, 43, 120);
 }
-
+#sample {
+  background: #ff0000;
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  max-height: 100px;
+  width: 100%;
+  z-index: 999;
+  display: none;
+}
 /***********************************/
 /***   4.0  Navigation footer   ****/
 /***********************************/
@@ -144,7 +152,7 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
-  color: rgb(152, 155, 167);
+  color: rgb(173, 170, 195);
 }
 h3 {
   font-size: 1.375rem;
