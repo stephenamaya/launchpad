@@ -6,6 +6,6 @@ An exploration in UX and UI in the theme of a solar system web application.
 
 # How to use
 
-To test the app, go to [Weather app live](https://stephenamaya.github.io/weather/). 
-From there, you have two fields to submit the form
+[Live project here.](https://stephenamaya.github.io/launchpad/). Enjoy the ride. 
+
 
