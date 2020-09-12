@@ -27,7 +27,7 @@
         });
       });
 
-// functions for planet to planet 
+// functions for planet to planet, they are all the same, just different IDs 
 
       $(function() {
         $('#neptune-btn').click(function() {
@@ -167,10 +167,8 @@ secondenoppagina = (nu.getTime() - startdatum.getTime())/1000
 totaleschuld= (nu.getTime() - schuldstartdatum.getTime())/1000*groeiperseconde + now
 ChangeValue(totaleschuld,1);
 
-
 timerID = setTimeout("now(startdatum.getYear(),startdatum.getMonth(),startdatum.getDate(),startdatum.getHours(),startdatum.getMinutes(),startdatum.getSeconds())",200)
 }
-
 
 // day of the week for the landing page
 
@@ -189,4 +187,19 @@ function dayofweek() {
   document.getElementById("dayoweek").innerHTML = n;
 }
 
-// show nav after scroll
+// fade in / out nav after scrolling 3000 px from the bottom 
+
+$(window).scroll(function() {
+  if($(window).scrollTop() + $(window).height() > $(document).height() - 3000) {
+    $('#nav').fadeOut(1000);
+  } 
+  else {
+    $('#nav').fadeIn(1000);
+  }
+});
+
+// Loads page on bottom launch pad anchor tag 
+
+$(function() {
+  $(document).scrollTop( $("#launch-div").offset().top );  
+});
