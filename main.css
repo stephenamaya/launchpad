@@ -55,10 +55,10 @@ body {
   max-width: 100%;
   /* overflow-x: hidden; */
   background-color: black;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   /*  font weights are 400, 500, and 700 */
   /* -ms-overflow-style: none;   */
-  scrollbar-width: none;  
+  scrollbar-width: none;
   /* scroll-behavior: smooth; */
 }
 
@@ -88,8 +88,7 @@ body::-webkit-scrollbar {
   background-image: url("./images/planets/stars.png"),
     linear-gradient(135deg, rgb(49, 16, 44) 0%, rgb(16, 29, 46) 100%);
 }
-
-.launch{
+footer {
   font-size: 1.4rem;
   scroll-snap-align: start;
   height: 100vh;
@@ -99,50 +98,47 @@ body::-webkit-scrollbar {
     linear-gradient(135deg, rgb(49, 16, 44) 0%, rgb(16, 29, 46) 100%);
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  background: rgb(228, 43, 120);
+}
+
+::selection {
+  background: rgb(228, 43, 120);
+}
+
 /***********************************/
 /***   3.0 Navigation header   *****/
 /***********************************/
 
-nav{   position: fixed;
+nav {
+  position: fixed;
   z-index: 1;
   top: 20px;
   left: 20px;
-  /* background: #eee; */
   padding: 8px 0;
   height: 100%;
-  display:none;
+  display: none;
 }
 
 nav a {
   height: 10%;
   padding: 0px;
   text-decoration: none;
-  font-size: 26px;
+  font-size: 25px;
   color: #adb0bb;
   font-weight: 700;
   display: block;
   transition: 0.3s;
 }
 
-nav a:hover{
+nav a:hover {
   color: rgb(228, 43, 120);
 }
-#sample {
-  background: #ff0000;
-  position: fixed;
-  bottom: 0;
-  height: auto;
-  max-height: 100px;
-  width: 100%;
-  z-index: 999;
-  display: none;
-}
+
 /***********************************/
 /***   4.0  Navigation footer   ****/
 /***********************************/
-
-
-
 
 /***********************************/
 /*********   5.0 Fonts    **********/
@@ -155,24 +151,21 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
-  color: rgb(173, 170, 195);
+  font-size: 2rem;
+  color: rgb(228, 227, 230);
 }
 h3 {
-  font-size: 1.375rem;
+  font-size: 1.75rem;
+  color: rgb(193, 191, 199);
 }
-h4 {
-  font-size: 1.125rem;
-}
-h5 {
-  font-size: 1rem;
-}
-h6 {
-  font-size: 0.875rem;
-}
+
 p {
   font-size: 1.125rem;
   font-weight: 200;
+}
+
+.description h1 {
+  color: rgb(228, 43, 120);
 }
 
 /***********************************/
@@ -187,9 +180,9 @@ p {
 /********   8.0  Images   **********/
 /***********************************/
 
-img{
+img {
   max-width: 100%;
-padding-top: 20vh;
+  padding-top: 20vh;
 }
 
 /***********************************/
@@ -200,7 +193,7 @@ padding-top: 20vh;
 /*******   10.0  Buttons   *********/
 /***********************************/
 
-.launch{
+footer {
   text-align: center;
   margin: auto;
 }
@@ -223,16 +216,11 @@ padding-top: 20vh;
   border-radius: 0px;
 }
 
-.stretched-btn a{
+.stretched-btn a {
   padding: 30px 30px;
   color: rgb(33, 21, 48);
   font-weight: bold;
 }
-
-
-
-
-
 
 /***********************************/
 /****   11.0 Personal kinks   ******/
@@ -241,3 +229,61 @@ padding-top: 20vh;
 /***********************************/
 /*****   12.0 Mobile size    *******/
 /***********************************/
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 1.6rem;
+    padding-top: 5vh;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .stretched-btn {
+    margin-top: 10vh;
+    width: 150px;
+    padding: 10px;
+    border-radius: 50px;
+  }
+
+  footer {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+footer h1{
+  padding-top: 10vh;
+}
+
+  nav {
+    top: 0px;
+    left: 0px;
+    height: 0%;
+  }
+
+  nav a {
+    height: 0%;
+    font-size: 0px;
+  }
+
+  .one,
+  .two {
+    height: 100vh;
+    line-height: 1.8;
+    padding-left: 0px;
+  }
+
+  img{
+    max-width: 50%;
+    margin-left: 25%;
+    padding-top: 5vh;
+  }
+
+  .color{
+    background-color: tomato;
+  }
+}

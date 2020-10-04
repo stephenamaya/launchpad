@@ -191,10 +191,10 @@ function dayofweek() {
 
 $(window).scroll(function() {
   if($(window).scrollTop() + $(window).height() > $(document).height() - 3000) {
-    $('#nav').fadeOut(1000);
+    $('nav').fadeOut(1000);
   } 
   else {
-    $('#nav').fadeIn(1000);
+    $('nav').fadeIn(1000);
   }
 });
 
@@ -203,3 +203,6 @@ $(window).scroll(function() {
 $(function() {
   $(document).scrollTop( $("#launch-div").offset().top );  
 });
+
+
+// navigation
