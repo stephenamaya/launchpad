@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Welcome </title>
+    <title> We come in peace </title>
     <meta name="description" content="awesome description of website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./main.css?ver=2">
@@ -12,32 +12,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 
 <body onload="dayofweek(); worldpopulation();">
 
     <nav>
-     
+
         <a href="#neptune" id="neptune-btn"> Neptune </a>
         <a href="#uranus" id="uranus-btn"> Uranus </a>
         <a href="#saturn" id="saturn-btn"> Saturn </a>
-        <a href="#jupiter" id="jupiter-btn"> Jupiter </a>        
+        <a href="#jupiter" id="jupiter-btn"> Jupiter </a>
         <a href="#mars" id="mars-btn"> Mars </a>
-        <a href="#earth" id = "earth-btn"> Earth </a>
+        <a href="#earth" id="earth-btn"> Earth </a>
         <a href="#venus" id="venus-btn"> Venus </a>
-        <a href="#mercury" id="mercury-btn" > Mercury </a>
-        <a href="#sun" id="sun-btn" > The Sun </a>
+        <a href="#mercury" id="mercury-btn"> Mercury </a>
+        <a href="#sun" id="sun-btn"> The Sun </a>
         <a href="#launch" id="launch-btn"> Launch Pad </a>
-          
+
     </nav>
 
-
+    <div class = "mobilenav">
+        <a href="#launch2" id="launch-btn2"> Launch Pad </a>
+    </div>
 
     <section class="one">
         <div class="row" id="neptune">
             <div class="col c8 s12 description">
-                <h1>Neptune description</h1>
+                <h1>Neptune</h1>
+                <h2> A little about me: </h2>
+                <h3> - Named after Roman god of sea </h3>
+                <h3> - Small and gassy </h3>
+                <h3> - Only visited once in 1989 </h3>
+                <h3> - Feeling a little distant</h3>
+                <h3> - Sweater weather </h3>
             </div>
 
             <div class="col c4 s12">
@@ -49,7 +61,13 @@
     <section class="two" id="uranus">
         <div class="row">
             <div class="col c8 s12 description">
-                <h1>Uranus description</h1>
+                <h1>Uranus</h1>
+                <h2> Grow up. </h2>
+                <h3> - Lucky #7 </h3>
+                <h3> - Discovered in 1781 </h3>
+                <h3> - Ice ice baby </h3>
+                <h3> - Takes 84 years to orbit the sun </h3>
+                <h3> - Also have a few little rings </h3>
             </div>
 
             <div class="col c4 s12">
@@ -61,7 +79,13 @@
     <section class="one" id="saturn">
         <div class="row">
             <div class="col c8 s12 description">
-                <h1>Saturn description</h1>
+                <h1>Saturn</h1>
+                <h2> A little about me: </h2>
+                <h3> - Married </h3>
+                <h3> - 82 moons, but who's counting </h3>
+                <h3> - Kinda Gassy </h3>
+                <h3> - 10 hour days, work fast </h3>
+                <h3> - Hula hoop champion of the universe </h3>
             </div>
 
             <div class="col c4 s12">
@@ -73,16 +97,22 @@
     <section class="two" id="jupiter">
         <div class="row">
             <div class="col c8 s12 description">
-                <h1>Jupiter description</h1>
+                <h1>Jupiter</h1>
+                <h2> A little about me: </h2>
+                <h3> - Huge, Earth x 318 huge</h3>
+                <h3> - Ballerina-like spins </h3>
+                <h3> - Moony </h3>
+                <h3> - My red spot is actually a storm </h3>
+                <h3> - You can see me </h3>
             </div>
 
             <div class="col c4 s12">
-                <img src= "./images/planets/jupiter.png" alt="">
+                <img src="./images/planets/jupiter.png" alt="">
             </div>
         </div>
     </section>
 
-    <section class="one" id = "mars">
+    <section class="one" id="mars">
         <div class="row">
             <div class="col c8 s12 description">
                 <h1>Mars</h1>
@@ -93,7 +123,7 @@
                 <h3> - Highest mountain ever, a volcano named Olympus Mons </h3>
                 <h3> - Martians </h3>
             </div>
- 
+
             <div class="col c4 s12">
                 <img src="./images/planets/mars.png" alt="">
             </div>
@@ -110,7 +140,7 @@
                 <h3> - Hydrated </h3>
                 <h3> - Vintage </h3>
                 <h3> - Attractive </h3>
-                <h3> - Roughly <span id="worldpop"></span> residents</h3> 
+                <h3> - Roughly <span id="worldpop"></span> residents</h3>
             </div>
 
             <div class="col c4 s12">
@@ -127,7 +157,7 @@
                 <h3> - Somehow the hottest planet</h3>
                 <h3> - A day here lasts longer than a year</h3>
                 <h3> - The only planet that spins clockwise </h3>
-                <h3> - Named after the Roman goddess of love and beauty  </h3>
+                <h3> - Named after the Roman goddess of love and beauty </h3>
                 <h3> - Earth's twin and neighbor </h3>
             </div>
 
@@ -139,7 +169,7 @@
 
     <section class="two" id="mercury">
         <div class="row">
-            <div class="col c8 s12 description"">
+            <div class="col c8 s12 description">
                 <h1>Mercury</h1>
                 <h2> A little about me: </h2>
                 <h3> - Me and the Sun are very close </h3>
@@ -174,26 +204,27 @@
     </section>
 
 
-    <div class = "two"></div>
-    <div class = "one"></div>
-    <div class = "two"></div>
-    <div class = "one"></div>
-    <div class = "two"></div>
-    <div class = "one"></div>
-    <div class = "two"></div>
-    <div class = "one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
 
 
-    <footer id = "launch-div">
-        <h1> Big news, we have a launch today. Yes, even on a <span id = "dayoweek">  </span>. </h1>
+    <footer id="launch-div">
+        <h1> Big news, we have a launch today. Yes, even on a <span id="dayoweek"> </span>. </h1>
         <h2> We will be starting our tour with a crowd favorite, Earth. </h2>
         <h2> Launch when ready captain. </h2>
+        <a href="#" id="launch2"></a>
 
         <div class="stretched-btn">
             <a href="#earth" id="launch"> Launch </a>
         </div>
 
-<br>
+        <br>
     </footer>
 
 

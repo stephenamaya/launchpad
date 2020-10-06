@@ -27,6 +27,16 @@
         });
       });
 
+
+      $(function() {
+        $('#launch-btn2').click(function() {
+          $('html,body').animate({
+            scrollTop: $("#launch2").offset().top }, 
+            7000 
+          );
+          return false;
+        });
+      });
 // functions for planet to planet, they are all the same, just different IDs 
 
       $(function() {
@@ -195,6 +205,16 @@ $(window).scroll(function() {
   } 
   else {
     $('nav').fadeIn(1000);
+  }
+});
+
+
+$(window).scroll(function() {
+  if($(window).scrollTop() + $(window).height() > $(document).height() - 3000) {
+    $('.mobilenav').fadeOut(1000);
+  } 
+  else {
+    $('.mobilenav').fadeIn(1000);
   }
 });
 

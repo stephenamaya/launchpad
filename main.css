@@ -136,6 +136,10 @@ nav a:hover {
   color: rgb(228, 43, 120);
 }
 
+.mobilenav {
+  display: none;
+}
+
 /***********************************/
 /***   4.0  Navigation footer   ****/
 /***********************************/
@@ -255,9 +259,9 @@ footer {
     line-height: 2;
   }
 
-footer h1{
-  padding-top: 10vh;
-}
+  footer h1 {
+    padding-top: 10vh;
+  }
 
   nav {
     top: 0px;
@@ -277,13 +281,28 @@ footer h1{
     padding-left: 0px;
   }
 
-  img{
+  img {
     max-width: 50%;
     margin-left: 25%;
     padding-top: 5vh;
   }
 
-  .color{
+  .color {
     background-color: tomato;
+  }
+
+  .mobilenav {
+    display: unset;
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 3;
+  }
+
+  .mobilenav a{
+    color: white;
+    float: right;
+    padding-right: 20px;
   }
 }
