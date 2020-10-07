@@ -2,7 +2,7 @@
 
 An exploration in UX and UI in the theme of a solar system web application. 
 
-![alt text](./docs/readme.PNG) 
+![alt text](./images/example1.png) 
 
 # Live Project
 
